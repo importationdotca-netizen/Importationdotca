@@ -10,8 +10,20 @@ export default function Document() {
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-XXXXXXX');`
+          })(window,document,'script','dataLayer','GTM-WX2LMHJB');`
         }} />
+        
+        {/* Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL23TYQNNK"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SL23TYQNNK');
+          `
+        }} />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
@@ -19,7 +31,7 @@ export default function Document() {
         <noscript>
           <iframe 
             title="Google Tag Manager"
-            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WX2LMHJB"
             height="0" 
             width="0" 
             style={{display:'none',visibility:'hidden'}}
