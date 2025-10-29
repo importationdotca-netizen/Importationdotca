@@ -1,0 +1,71 @@
+================================================================================
+🌐 LOCALHOST SERVER - ALWAYS ACCESSIBLE
+================================================================================
+
+YOUR SERVER IS NOW STARTING!
+
+Wait 15 seconds, then visit:
+═══════════════════════════════════════════════════════════════════════════════
+                          http://localhost:3000
+═══════════════════════════════════════════════════════════════════════════════
+
+================================================================================
+HOW TO KEEP IT RUNNING
+================================================================================
+
+OPTION 1: DOUBLE-CLICK (Easiest)
+📁 Double-click this file: START_LOCALHOST.bat
+   → Opens a window that keeps the server running
+   → Leave the window open to keep the server active
+   → Press Ctrl+C in that window to stop it
+
+OPTION 2: MANUAL COMMAND
+1. Open PowerShell in the project folder
+2. Run: npm run dev
+3. Leave the PowerShell window open
+4. Visit: http://localhost:3000
+
+================================================================================
+WHAT'S ON THE SERVER
+================================================================================
+
+✅ Homepage with hero video
+✅ Brand partners section
+✅ Products page (Chocolate & Candy)
+✅ Home Décor page
+✅ Hospitality page (4 sections)
+✅ Contact page with form
+✅ Thank you page
+
+✅ NO AUTOPLAY on galleries
+✅ SMOOTH SCROLLING enabled
+✅ Manual control only
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If localhost doesn't load:
+1. Wait 10-15 more seconds
+2. Check if you see "Ready on http://localhost:3000" in terminal
+3. Try: http://localhost:3000
+4. Hard refresh: Ctrl+F5
+
+If server stops:
+1. Double-click START_LOCALHOST.bat again
+2. Leave the window open
+3. Keep the terminal visible
+
+================================================================================
+CURRENT STATUS
+================================================================================
+
+Server: Starting...
+Wait: 15 seconds
+URL: http://localhost:3000
+Status: Should be ready shortly
+
+To keep it running: Leave the terminal window open!
+
+================================================================================
+
