@@ -1,0 +1,53 @@
+TD Canada Trust
+Account Information Sheet 
+How to Set up Direct Deposits, Pre-Authorized Debits, 
+Wire Payments and Interac e-Transfer®
+Direct to Account Transfers
+                                                                                                                              Customer Name
+ 
+1 523218 (1025) Transit No.
+47361Inst. No.
+004*Designation No.
+0093Account No.
+7308958
+*Note: Not all accounts have a designation number. If your account has a designation number, it will appear above. Designation numbers are not 
+required for direct deposits.
+Incoming Wire Payments
+Bank Name: TD Canada Trust SWIFT BIC Code: TDOMCATTTOR
+Branch Address:  2065 RUE SAINT-LOUIS, SAINT-LAURENT, PQ H4M1P1, CAN 
+Customer Account Number:  47367308958 
+Note: Your Customer Account Number for wires is composed of the first 4 digits of your 5-digit Transit Number, followed by your 7-digit  
+Account Number. 
+Customer Address:  
+Provide this information to the party who is sending the wire payment to your TD Canada Trust account. These instructions may be used for  
+any currency which TD is able to receive. To find out more about our foreign currency service offerings please visit  
+www.tdcanadatrust.com .
+There may be a fee to receive a wire payment to your TD Canada Trust account. For more information, please refer to your account  
+agreement and applicable fee disclosure. 
+Printing Cheques: You can order cheques through TD by logging into EasyWeb, calling EasyLine, or visiting the TD branch that's closest 
+to you. Alternatively, if you are printing your cheques from an accredited third-party vendor, please be sure to include the institution, 
+transit, account, and designation number (if applicable).
+Direct Deposit: Direct Deposit is the most convenient way to receive recurring deposits (i.e., pay, pension, government payments, etc.) 
+with immediate access to funds.
+To set up a Direct Deposit with:
+•The federal government: Visit www.directdeposit.gc.ca for a Government of Canada Direct Deposit enrolment form and use your 
+account information from the fields above to complete the form. If you do not have a cheque to void, have your local TD Canada 
+Trust branch stamp the government enrolment form.
+•Your employer: Provide your account information from the fields above to the payroll department of your employer or company 
+pension provider.
+Pre-Authorized Debit (PAD): A Pre-Authorized Debit (PAD) is an automatic withdrawal taken directly from your TD Canada Trust 
+account by a company or financial institution that you have authorized.
+To set up a PAD: Call or visit the website of the company you wish to set up a PAD with to obtain their PAD Agreement. Follow the 
+instructions provided using your account information from the fields above when completing the PAD Agreement.
+Note: If your billing company accepts Visa Debit in Canada (or Visa internationally) and you have the enhanced TD Access Card, setting 
+up a PAD will be easier than ever! Simply provide them with the card's 16 digit number in place of the account information noted above.
+Reminder: If you are setting up a Direct Deposit or Pre-Authorized Debit to a Tax-Free Savings Account other conditions apply. Only the 
+TFSA Holder may make contributions to the account. It is the responsibility of the TFSA Holder to ensure that no contribution exceeds the 
+maximum permitted under applicable tax legislations. Penalty taxes may apply on over-contributions. For further details, please contact the 
+Canada Revenue Agency.
+Interac e-Transfer - Direct to Account transfers: Many businesses that use Interac e-Transfer are able to send transfers using the 
+recipient's account number information as an alternative to using the recipient's email address or mobile phone number. If the business 
+sending you money uses this feature, you can provide the business with your Transit No., Inst. No., and Account No. from the fields above 
+to receive payment directly to your TD Canada Trust account.
+Interac e-Transfer is a registered Trademark of Interac Corp. Used under license. 
+*Trademark of Visa International Service Association and used under license.

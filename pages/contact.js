@@ -2,15 +2,52 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
+import StructuredData from '../components/StructuredData';
+import { breadcrumbSchema, localBusinessSchema, serviceSchema, webPageSchema } from '../lib/schema';
 
 export default function Contact() {
+  const structuredData = [
+    webPageSchema({
+      name: 'Contact ImportationDot – Worldwide Service',
+      description: 'Contact ImportationDotCA for wholesale import quotes, partnerships, and customer support. Based in Hawkesbury, ON, Canada — serving businesses worldwide.',
+      url: 'https://importationdot.ca/contact/',
+      type: 'ContactPage',
+    }),
+    localBusinessSchema({
+      name: 'ImportationDotCA Inc.',
+      address: {
+        addressLocality: 'Hawkesbury',
+        addressRegion: 'ON',
+        addressCountry: 'CA',
+      },
+      telephone: '+1-800-226-2488',
+      email: 'info@importationdot.ca',
+      url: 'https://importationdot.ca/contact/',
+      openingHours: 'Mo-Fr 09:00-17:00',
+    }),
+    serviceSchema({
+      name: 'Wholesale Import Consultation',
+      description: 'Request quotes and consultation for ImportationDotCA wholesale import, distribution, and sourcing programs.',
+      url: 'https://importationdot.ca/contact/',
+      serviceType: 'Consultation',
+    }),
+    breadcrumbSchema([
+      { name: 'Home', item: 'https://importationdot.ca/' },
+      { name: 'Contact', item: 'https://importationdot.ca/contact/' },
+    ]),
+  ].filter(Boolean);
+
   return (
     <>
       <Head>
-        <title>Contact Us | ImportationDotCA Inc.</title>
-        <meta name="description" content="Get in touch with ImportationDotCA for wholesale import/export quotes and inquiries." />
+        <title>Contact ImportationDot – Worldwide Service</title>
+        <meta name="description" content="Contact ImportationDotCA for wholesale import quotes, partnerships, and customer support. Based in Hawkesbury, ON, Canada — serving businesses worldwide. Get your quote today!" />
         <link rel="canonical" href="https://importationdot.ca/contact/" />
+        <meta property="og:title" content="Contact ImportationDotCA | Get Your Import Quote Today" />
+        <meta property="og:description" content="Contact ImportationDotCA for wholesale import quotes, partnerships, and customer support. Based in Hawkesbury, ON, Canada." />
       </Head>
+
+      <StructuredData data={structuredData} />
 
       <Header />
       
@@ -18,11 +55,33 @@ export default function Contact() {
         <section className="w-full section-padding bg-slate-950">
           <div className="section-container">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">
-              Contact Us
+              Contact ImportationDot – Worldwide Service
             </h1>
             <p className="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
-              Get in touch with us for quotes, inquiries, or to learn more about our wholesale import services.
+              Get in touch with us for quotes, inquiries, or to learn more about our worldwide wholesale import and delivery services. 
+              We support shipments worldwide. Our team typically responds within 24 hours during business hours.
             </p>
+
+            <div className="max-w-3xl mx-auto mb-12 bg-slate-800/50 p-6 border border-white/10 rounded-lg">
+              <h2 className="text-2xl font-bold text-white mb-4 text-center">Our Location</h2>
+              <p className="text-gray-300 text-center leading-relaxed">
+                ImportationDotCA operates from Hawkesbury, Ontario, Canada, and provides worldwide import and sourcing services.
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto mb-12 bg-slate-800/50 p-6 border border-white/10 rounded-lg">
+              <h2 className="text-2xl font-bold text-white mb-4 text-center">Worldwide Service Coverage</h2>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                ImportationDotCA proudly serves clients across North America, Europe, Asia, Africa, and South America. 
+                We operate globally with reliable international logistics.
+              </p>
+              <div className="mt-4">
+                <p className="text-gray-300 font-semibold mb-2">Shipping Restrictions:</p>
+                <p className="text-gray-400 text-sm">
+                  Due to international regulations, we currently do not ship to: North Korea, Iran, and the Palestinian Territories.
+                </p>
+              </div>
+            </div>
 
             <div className="max-w-3xl mx-auto mb-12 bg-slate-900/50 p-8 border border-white/10">
               <h2 className="text-2xl font-bold text-white mb-4 text-center">

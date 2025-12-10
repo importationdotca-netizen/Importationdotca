@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Cost Summary — iPhone 17 Series</title>
+    <style>
+      :root {
+        --background: #f2f2f2;
+        --card: #ffffff;
+        --border: #dcdcdc;
+        --accent: #d9b166;
+        --accent-dark: #8c6b2f;
+        --text: #222222;
+        --muted: #555555;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #f9f6f1 0%, #f3f0ea 100%);
+        color: var(--text);
+      }
+
+      .wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: 0 18px 40px rgba(20, 22, 24, 0.08);
+        overflow: hidden;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .logo {
+        width: 96px;
+        height: 96px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        background: #ffffff;
+      }
+
+      .logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .header-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 12px;
+      }
+
+      .title {
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        font-weight: 600;
+      }
+
+      .meta {
+        text-align: right;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      main {
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .info-card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+        background: linear-gradient(135deg, rgba(217, 177, 102, 0.12), rgba(255, 255, 255, 0.9));
+      }
+
+      .info-card h3 {
+        margin: 0 0 8px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      .info-card p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.55;
+        color: var(--text);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      table thead {
+        background: rgba(51, 51, 51, 0.04);
+      }
+
+      table thead th {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 11px;
+        color: var(--accent-dark);
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+
+      table tbody td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        font-size: 12px;
+      }
+
+      table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      table td:nth-child(2),
+      table td:nth-child(3) {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .note {
+        margin: 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .footer-note {
+        padding: 20px 28px 28px;
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+        border-top: 1px solid var(--border);
+        background: #ffffff;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          padding: 16px;
+        }
+
+        .wrapper {
+          box-shadow: none;
+          max-width: 660px;
+        }
+
+        .header {
+          padding: 18px 20px;
+        }
+
+        .logo {
+          width: 84px;
+          height: 84px;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .meta {
+          font-size: 11px;
+        }
+
+        main {
+          padding: 18px;
+          gap: 18px;
+        }
+
+        table thead th {
+          font-size: 9.5px;
+          padding: 6px 8px;
+        }
+
+        table tbody td {
+          font-size: 10.5px;
+          padding: 6px 8px;
+        }
+
+        .footer-note {
+          font-size: 10px;
+          padding: 16px 20px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <img src="media/logo.png" alt="ImportationDot.ca Logo" />
+        </div>
+        <div class="header-info">
+          <div class="title">Internal Cost Summary</div>
+          <div class="meta">
+            <div><strong>Cost Reference:</strong> Cost-1761</div>
+            <div><strong>Date Compiled:</strong> November 10, 2025</div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="info-grid">
+          <div class="info-card">
+            <h3>Prepared By</h3>
+            <p>
+              ImportationDot.ca Inc.<br />
+              Mobility Procurement | Finance<br />
+              finance@importationdot.ca
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Scope</h3>
+            <p>
+              Internal cost baseline for iPhone 17 Pro / Pro Max procurement
+              for Q4 2025 allocations.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h3 style="margin: 0 0 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-dark);">Unit Cost Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Model &amp; Configuration</th>
+                <th>Unit Cost (USD)</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="desc">iPhone 17 Pro Max 256 GB – Factory Unlocked (eSIM)</td>
+                <td>$923.00</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="desc">iPhone 17 Pro Max 512 GB – Factory Unlocked (eSIM)</td>
+                <td>$1,123.00</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="desc">iPhone 17 Pro Max 1 TB – Factory Unlocked (eSIM)</td>
+                <td>$1,323.00</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="desc">iPhone 17 Pro 256 GB – Factory Unlocked (eSIM)</td>
+                <td>$823.00</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="desc">iPhone 17 Pro 512 GB – Factory Unlocked (eSIM)</td>
+                <td>$1,023.00</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="desc">iPhone 17 Pro 1 TB – Factory Unlocked (eSIM)</td>
+                <td>$1,223.00</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="info-card" style="background: #ffffff; border-style: dashed;">
+          <h3 style="margin-bottom: 6px;">Internal Notes</h3>
+          <p class="note">
+            Costs reflect latest supplier confirmations as of November 2025 and
+            exclude freight, duties, and currency fluctuation buffers. Use for
+            margin analysis and pricing strategy only. Consult Finance for
+            volume-specific adjustments or blended margin scenarios.
+          </p>
+        </section>
+      </main>
+
+      <div class="footer-note">
+        Confidential &mdash; ImportationDot.ca Internal Procurement Reference.
+        Distribution outside authorized teams is not permitted without written
+        approval.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ImportationDotCA | Wire Transfer Instructions</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f0ea;
+        --card: #ffffff;
+        --accent: #c4a474;
+        --accent-dark: #9c7d4c;
+        --text: #2b2520;
+        --muted: #5f574d;
+        --border: #d8cec3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 36px 12px;
+        background: var(--bg);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        color: var(--text);
+      }
+
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 18px 40px rgba(60, 46, 30, 0.12);
+        overflow: hidden;
+      }
+
+      header {
+        padding: 24px 28px;
+        background: linear-gradient(120deg, #efe0cb, #d1ad7d);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 22px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .content {
+        padding: 22px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px 20px;
+        background: var(--card);
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+      }
+
+      .grid-two {
+        display: grid;
+        gap: 14px;
+      }
+
+      .pair {
+        display: grid;
+        gap: 4px;
+        font-size: 13.5px;
+      }
+
+      .pair span:first-child {
+        color: var(--muted);
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      @media (min-width: 640px) {
+        .grid-two {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          column-gap: 24px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          padding: 16px;
+        }
+
+        .wrapper {
+          box-shadow: none;
+          border-radius: 14px;
+        }
+
+        header {
+          padding: 18px 22px;
+        }
+
+        header h1 {
+          font-size: 20px;
+        }
+
+        .content {
+          padding: 18px;
+          gap: 14px;
+        }
+
+        .card {
+          padding: 12px 14px;
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ImportationDotCA | Wire Transfer Instructions</h1>
+      </header>
+      <main class="content">
+        <section class="card">
+          <h2>Company Details</h2>
+          <div class="grid-two">
+            <div class="pair"><span>Customer Name</span><span>ImportationDotCA Inc.</span></div>
+            <div class="pair">
+              <span>Customer Address</span
+              ><span>111 Rue Chabanel O, Suite 619, Montreal, QC, H2N&nbsp;1C8, Canada</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Bank Details</h2>
+          <div class="grid-two">
+            <div class="pair"><span>Bank Name</span><span>TD Canada Trust</span></div>
+            <div class="pair"><span>SWIFT / BIC</span><span class="highlight">TDOMCATTTOR</span></div>
+            <div class="pair"><span>Wire Account Number</span><span class="highlight">47367308958</span></div>
+            <div class="pair"><span>Institution Number</span><span>004</span></div>
+            <div class="pair">
+              <span>Branch Address</span
+              ><span>2065 Rue Saint-Louis, Saint-Laurent, QC, H4M&nbsp;1P1, Canada</span>
+            </div>
+          </div>
+          <p style="margin-top: 12px; font-size: 12px; color: var(--muted);">
+            Your customer account number for wires is composed of the first four digits of your five-digit transit number,
+            followed by your seven-digit account number.
+          </p>
+        </section>
+
+        <p class="footer-note">Provide these instructions to your sender to ensure accurate wire processing.</p>
+      </main>
+    </div>
+  </body>
+</html>
+

@@ -5,18 +5,18 @@ import GallerySwiper from '../components/GallerySwiper';
 
 export default function ChocolateCandy() {
   const candyImages = [
-    { src: '/media/candy/Ferrero_Rocher_T16_200g_X_20_02.png', alt: 'Ferrero Rocher Chocolate' },
-    { src: '/media/candy/Cadbury_Dairy_Milk_180g_X_16_02.png', alt: 'Cadbury Dairy Milk' },
-    { src: '/media/candy/Lindor_Cornet_Assorted_200g_X_12_02.png', alt: 'Lindor Assorted Chocolate' },
-    { src: '/media/candy/Kinder_Bueno_10s_215g_X_14_02.png', alt: 'Kinder Bueno' },
-    { src: '/media/candy/Kit_Kat_2f_Milk_20_7greetX_9s_X_25_04.png', alt: 'Kit Kat' },
-    { src: '/media/candy/Milka_Alpine_Milk_100g_X_24_02.png', alt: 'Milka Alpine Milk' },
-    { src: '/media/candy/Mars_45g_10Pack_04.png', alt: 'Mars Chocolate' },
-    { src: '/media/candy/Snickers_5_Pack_50g_X_5_X_17_02.png', alt: 'Snickers Chocolate' },
-    { src: '/media/candy/Twix_Minis_227g_X_22_02.png', alt: 'Twix Chocolate' },
-    { src: '/media/candy/Celebrations_600g_04.png', alt: 'Celebrations Chocolate' },
-    { src: '/media/candy/M_M_Peanut_Pouch_250g_X_27_01.png', alt: 'M&M Peanut Pouch' },
-    { src: '/media/candy/Trolli_Gummies_02.png', alt: 'Trolli Gummies' },
+    { src: '/media/candy/Ferrero_Rocher_T16_200g_X_20_02.webp', alt: 'Ferrero Rocher Chocolate' },
+    { src: '/media/candy/Cadbury_Dairy_Milk_180g_X_16_02.webp', alt: 'Cadbury Dairy Milk' },
+    { src: '/media/candy/Lindor_Cornet_Assorted_200g_X_12_02.webp', alt: 'Lindor Assorted Chocolate' },
+    { src: '/media/candy/Kinder_Bueno_10s_215g_X_14_02.webp', alt: 'Kinder Bueno' },
+    { src: '/media/candy/Kit_Kat_2f_Milk_20_7g_X_9s_X_25_04.webp', alt: 'Kit Kat' },
+    { src: '/media/candy/Milka_Alpine_Milk_100g_X_24_02.webp', alt: 'Milka Alpine Milk' },
+    { src: '/media/candy/Mars_45g_10Pack_04.webp', alt: 'Mars Chocolate' },
+    { src: '/media/candy/Snickers_5_Pack_50g_X_5_X_17_02.webp', alt: 'Snickers Chocolate' },
+    { src: '/media/candy/Twix_Minis_227g_X_22_02.webp', alt: 'Twix Chocolate' },
+    { src: '/media/candy/Celebrations_600g_04.webp', alt: 'Celebrations Chocolate' },
+    { src: '/media/candy/M_M_Peanut_Pouch_250g_X_27_01.webp', alt: 'M&M Peanut Pouch' },
+    { src: '/media/candy/Trolli_Gummies_02.webp', alt: 'Trolli Gummies' },
   ];
 
   return (

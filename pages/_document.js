@@ -25,6 +25,15 @@ export default function Document() {
         }} />
         
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+        <link rel="mask-icon" href="/icons/icon-512-maskable.png" color="#0f172a" />
+        <meta name="theme-color" content="#d4a02b" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="ImportationDotCA" />
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}

@@ -1,0 +1,490 @@
+Business Number (BN): 718954621 RT0001<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ImportationDot.ca | Commercial Invoice #1003-S1</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f0ea;
+        --card: #ffffff;
+        --accent: #c4a474;
+        --accent-dark: #9c7d4c;
+        --text: #2b2520;
+        --muted: #5f574d;
+        --border: #d8cec3;
+        --paid-badge: #28a745;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 36px 12px;
+      }
+
+      .wrapper {
+        max-width: 780px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: 0 22px 50px rgba(60, 46, 30, 0.12);
+        overflow: hidden;
+      }
+
+      .header {
+        display: flex;
+        gap: 26px;
+        background: linear-gradient(120deg, #efe0cb, #d1ad7d);
+        padding: 26px 30px;
+        align-items: center;
+      }
+
+      .logo {
+        width: 96px;
+        height: 96px;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #101c31;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 14px 26px rgba(24, 18, 14, 0.18);
+      }
+
+      .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .header-info {
+        flex: 1;
+        display: grid;
+        gap: 10px;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: var(--text);
+      }
+
+      .meta {
+        display: grid;
+        gap: 4px;
+        font-size: 12px;
+      }
+
+      .meta strong {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-dark);
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        background: var(--paid-badge);
+        color: white;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-left: 12px;
+      }
+
+      main {
+        padding: 26px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+      }
+
+      .info-card h3 {
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        color: var(--accent-dark);
+      }
+
+      .info-card p {
+        margin: 0;
+        font-size: 12.5px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      thead th {
+        background: #efe5d4;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 11px;
+        padding: 9px 12px;
+        text-align: center;
+        color: var(--accent-dark);
+      }
+
+      tbody td {
+        padding: 11px 14px;
+        border-top: 1px solid var(--border);
+        font-size: 12.5px;
+        text-align: center;
+        color: var(--text);
+      }
+
+      tbody td.desc {
+        text-align: left;
+        font-weight: 500;
+      }
+
+      .totals {
+        margin-top: 14px;
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--card);
+        overflow: hidden;
+      }
+
+      .totals tr {
+        border-top: 1px solid var(--border);
+      }
+
+      .totals td {
+        padding: 9px 14px;
+        font-size: 11.5px;
+      }
+
+      .totals td:first-child {
+        text-align: right;
+        color: var(--muted);
+        width: 65%;
+      }
+
+      .totals td:last-child {
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .totals tr:last-child {
+        background: #eddcc4;
+        font-weight: 600;
+      }
+
+      .clause {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 18px;
+        background: var(--card);
+      }
+
+      .clause h4 {
+        margin: 0 0 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 12px;
+        color: var(--accent-dark);
+      }
+
+      .clause p,
+      .clause ul {
+        margin: 0;
+        font-size: 12.5px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .clause ul {
+        padding-left: 18px;
+      }
+
+      .declaration {
+        border: 2px solid var(--accent-dark);
+        border-radius: 14px;
+        padding: 16px 18px;
+        background: #faf8f5;
+        margin-top: 16px;
+      }
+
+      .declaration p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.8;
+        color: var(--text);
+        font-weight: 500;
+      }
+
+      .footer-note {
+        font-size: 10.5px;
+        text-align: right;
+        color: var(--muted);
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+          padding: 16px;
+        }
+
+        .wrapper {
+          box-shadow: none;
+          max-width: 740px;
+        }
+
+        .header {
+          padding: 20px 22px;
+        }
+
+        .logo {
+          width: 82px;
+          height: 82px;
+        }
+
+        .title {
+          font-size: 19px;
+        }
+
+        main {
+          padding: 18px;
+          gap: 16px;
+        }
+
+        table thead th {
+          font-size: 9.5px;
+          padding: 5px 7px;
+        }
+
+        table tbody td {
+          font-size: 10px;
+          padding: 5px 7px;
+        }
+
+        .clause {
+          padding: 12px 14px;
+          page-break-inside: avoid;
+        }
+
+        .footer-note {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <img src="../logo.png" alt="ImportationDot.ca Logo" />
+        </div>
+        <div class="header-info">
+          <div class="title">
+            COMMERCIAL INVOICE
+            <span class="status-badge">PAID</span>
+          </div>
+          <div class="meta">
+            <div><strong>Invoice No.:</strong> 1003-S1</div>
+            <div><strong>Invoice Date:</strong> November 25, 2025</div>
+            <div><strong>PO Reference:</strong> I1804GA (Shipment 1 of 40 - 15 units)</div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="info-grid">
+          <div class="info-card">
+            <h3>Exporter / Seller</h3>
+            <p>
+              ImportationDotCA Inc.<br />
+              6-302 Main Street West<br />
+              Hawkesbury, ON K6A 2H7, Canada<br />
+              NEQ: 1180620396<br />
+              Business Number (BN): 718954621 RT0001<br />
+              info@importationdot.ca<br />
+              1-800-226-2488
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Importer / Buyer</h3>
+            <p>
+              Buyitwithus, Sociedad Anonima<br />
+              Diagonal 6, 14-42, Edificio Desing Center, 2do Nivel, Local 212, Zona 10<br />
+              Guatemala City, Guatemala, 01010<br />
+              Tax ID: 7606692-4<br />
+              dsegura@ventasguate.com<br />
+              +502 4128-1434
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Shipment Details</h3>
+            <p>
+              <strong>Destination:</strong> La Aurora International Airport (GUA)<br />
+              <strong>Incoterm:</strong> CIF Guatemala City<br />
+              <strong>Payment Terms:</strong> Paid in Full<br />
+              <strong>Currency:</strong> USD<br />
+              <strong>Shipment:</strong> First shipment (15 of 40 units)
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h3
+            style="margin: 0 0 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-dark);"
+          >
+            Product Details
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Description</th>
+                <th>Storage</th>
+                <th>Colour</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                <th>Subtotal (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro Max – Factory Unlocked (eSIM)</td>
+                <td>256 GB</td>
+                <td>Orange</td>
+                <td>4</td>
+                <td>$1,095.00</td>
+                <td>$4,380.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro Max – Factory Unlocked (eSIM)</td>
+                <td>256 GB</td>
+                <td>Blue</td>
+                <td>4</td>
+                <td>$1,095.00</td>
+                <td>$4,380.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro Max – Factory Unlocked (eSIM)</td>
+                <td>512 GB</td>
+                <td>Orange</td>
+                <td>1</td>
+                <td>$1,280.00</td>
+                <td>$1,280.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro Max – Factory Unlocked (eSIM)</td>
+                <td>512 GB</td>
+                <td>Blue</td>
+                <td>1</td>
+                <td>$1,280.00</td>
+                <td>$1,280.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro Max – Factory Unlocked (eSIM)</td>
+                <td>1 TB</td>
+                <td>Orange</td>
+                <td>2</td>
+                <td>$1,530.00</td>
+                <td>$3,060.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro – Factory Unlocked (eSIM)</td>
+                <td>256 GB</td>
+                <td>Orange</td>
+                <td>2</td>
+                <td>$980.00</td>
+                <td>$1,960.00</td>
+              </tr>
+              <tr>
+                <td class="desc">Apple iPhone 17 Pro – Factory Unlocked (eSIM)</td>
+                <td>512 GB</td>
+                <td>Orange</td>
+                <td>1</td>
+                <td>$980.00</td>
+                <td>$980.00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="totals">
+            <tbody>
+              <tr>
+                <td>Subtotal (Products)</td>
+                <td>$17,320.00</td>
+              </tr>
+              <tr>
+                <td>Freight & Insurance (CIF) - Proportional</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <td><strong>Total Invoice Amount (USD)</strong></td>
+                <td><strong>$17,320.00</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="clause">
+          <h4>Product Information</h4>
+          <ul>
+            <li><strong>HS Code:</strong> 8517.12.00 (Mobile phones, cellular telephones)</li>
+            <li><strong>Total Quantity:</strong> 15 units (First shipment of 40 total units)</li>
+            <li><strong>IMEI List:</strong> Provided separately with this shipment</li>
+          </ul>
+        </section>
+
+        <section class="clause">
+          <h4>Payment Information</h4>
+          <p>
+            <strong>Payment Status:</strong> PAID IN FULL<br />
+            <strong>Invoice Date:</strong> November 25, 2025<br />
+            <strong>PO Reference:</strong> I1804GA<br />
+            <strong>Original Invoice:</strong> 1003 (40 units total)
+          </p>
+        </section>
+
+        <section class="clause">
+          <h4>Shipping & Delivery</h4>
+          <p>
+            Goods will be shipped via DHL air freight to La Aurora International Airport (GUA), Guatemala City, Guatemala.<br />
+            Delivery is arranged under INCOTERM® CIF (Cost, Insurance, and Freight).<br />
+            ImportationDotCA Inc. covers air freight and cargo insurance to destination airport.<br />
+            Buyer is responsible for customs clearance, duties, VAT, and local regulatory requirements in Guatemala.
+          </p>
+        </section>
+
+        <div class="declaration">
+          <p>
+            <strong>COMMERCIAL INVOICE DECLARATION:</strong><br />
+            We hereby certify that this invoice shows the actual price of the goods described and that all particulars are true and correct. This invoice is made out in three copies for customs purposes.
+          </p>
+        </div>
+
+        <div class="footer-note">
+          This is a computer-generated commercial invoice. Original copy will be provided with shipment.
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

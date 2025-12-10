@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const navLinks = [
-    { href: '/chocolate-candy', label: 'Products' },
+    { href: '/luxury-chocolate-imports', label: 'Chocolate Imports' },
+    { href: '/wholesale-unlocked-phones', label: 'Phones' },
     { href: '/hospitality', label: 'Hospitality' },
     { href: '/about-us', label: 'About' },
     { href: '/contact', label: 'Get Quote' },
@@ -17,11 +19,15 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo and Company Name */}
           <Link href="/" className="flex items-center space-x-3">
-            <img 
-              src="/media/logo.png" 
-              alt="ImportationDotCA Logo" 
-              className="h-12 w-auto"
-            />
+            <div className="relative h-12 w-12 md:w-14">
+              <Image
+                src="/media/logo.png"
+                alt="ImportationDotCA Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
             <span className="hidden md:block text-xl font-bold text-white">
               ImportationDotCA Inc.
             </span>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -10,19 +11,30 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/media/logo.png" 
-                alt="ImportationDotCA Logo" 
-                className="h-10 w-auto"
-              />
+              <div className="relative h-10 w-10 md:w-12">
+                <Image
+                  src="/media/logo.png"
+                  alt="ImportationDotCA Logo"
+                  fill
+                  className="object-contain"
+                  loading="lazy"
+                />
+              </div>
               <span className="text-lg font-bold text-white">
                 ImportationDotCA Inc.
               </span>
             </Link>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-4">
               Professional import/export of décor, confectionery, and hospitality goods
-              serving Canada & USA.
+              serving clients worldwide from Hawkesbury, ON, Canada.
             </p>
+            <div className="text-gray-400 text-xs">
+              <p className="font-semibold text-gray-300 mb-2">Worldwide Shipping Policy</p>
+              <p>We ship worldwide from our main office in Hawkesbury, ON, Canada.</p>
+              <p className="mt-2">Due to global regulations, we currently cannot ship to:</p>
+              <p>North Korea, Iran, and the Palestinian Territories.</p>
+              <p className="mt-2">All other regions are fully supported.</p>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -30,8 +42,13 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/chocolate-candy" className="text-gray-400 hover:text-accent-500 transition-colors text-sm">
-                  Products
+                <Link href="/luxury-chocolate-imports" className="text-gray-400 hover:text-accent-500 transition-colors text-sm">
+                  Chocolate Imports
+                </Link>
+              </li>
+              <li>
+                <Link href="/wholesale-unlocked-phones" className="text-gray-400 hover:text-accent-500 transition-colors text-sm">
+                  Phones
                 </Link>
               </li>
               <li>

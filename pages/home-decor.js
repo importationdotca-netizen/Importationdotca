@@ -5,12 +5,12 @@ import GallerySwiper from '../components/GallerySwiper';
 
 export default function HomeDecor() {
   const decorImages = [
-    { src: '/media/decor/Godiva_Signature_Bars_Milk_Chocolate_90g_X_20_02.png', alt: 'Godiva Chocolate' },
-    { src: '/media/decor/Lotus_Spread_400g_01.png', alt: 'Lotus Spread' },
-    { src: '/media/decor/Ritter_Sport_Alpine_Milk_100g_X_12_03.png', alt: 'Ritter Sport Alpine Milk' },
-    { src: '/media/decor/Ritter_Sport_Marzipan_100g_X_12_04.png', alt: 'Ritter Sport Marzipan' },
-    { src: '/media/decor/Lindt_Hello_Tafel_Crunchy_Coconut_100g_X_12_04.png', alt: 'Lindt Hello Tafel' },
-    { src: '/media/decor/Lindt_Hello_Tafel_Salted_Caramel_100g_X_12_04.png', alt: 'Lindt Salted Caramel' },
+    { src: '/media/decor/Godiva_Signature_Bars_Milk_Chocolate_90g_X_20_02.webp', alt: 'Godiva Chocolate' },
+    { src: '/media/decor/Lotus_Spread_400g_01.webp', alt: 'Lotus Spread' },
+    { src: '/media/decor/Ritter_Sport_Alpine_Milk_100g_X_12_03.webp', alt: 'Ritter Sport Alpine Milk' },
+    { src: '/media/decor/Ritter_Sport_Marzipan_100g_X_12_04.webp', alt: 'Ritter Sport Marzipan' },
+    { src: '/media/decor/Lindt_Hello_Tafel_Crunchy_Coconut_100g_X_12_04.webp', alt: 'Lindt Hello Tafel' },
+    { src: '/media/decor/Lindt_Hello_Tafel_Salted_Caramel_100g_X_12_04.webp', alt: 'Lindt Salted Caramel' },
   ];
 
   return (
