@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <form action="/send_email.php" method="POST" className="space-y-4 w-full max-w-lg mx-auto">
+    <form action="/api/contact" method="POST" className="space-y-4 w-full max-w-lg mx-auto">
       <div>
         <input
           name="name"

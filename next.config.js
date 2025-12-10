@@ -1,5 +1,5 @@
 const nextConfig = {
-  output: 'export',
+  // Removed 'output: export' to enable API routes for Vercel
   trailingSlash: true,
   images: {
     unoptimized: true,

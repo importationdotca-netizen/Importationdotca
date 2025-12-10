@@ -1,4 +1,4 @@
-# ImportationDotCA - Next.js Static Website
+# ImportationDotCA - Next.js Website
 
 Professional wholesale import/export website built with Next.js, TailwindCSS, and SwiperJS.
 
@@ -10,12 +10,12 @@ npm install
 npm run dev
 ```
 
+Visit `http://localhost:3000`
+
 ### Production Build
 ```bash
 npm run build
 ```
-
-The static export will be in the `/out` directory.
 
 ## 📁 Project Structure
 
@@ -25,22 +25,28 @@ The static export will be in the `/out` directory.
 │   ├── Footer.js       # Bottom footer
 │   ├── Hero.js         # Hero section
 │   ├── GallerySwiper.js # Image gallery slider
-│   └── ContactForm.js  # Contact form
+│   ├── ContactForm.js  # Contact form
+│   └── StructuredData.js # SEO structured data
 ├── pages/              # Next.js pages
+│   ├── api/            # API routes
+│   │   └── contact.js  # Email API endpoint
 │   ├── _app.js         # Global app wrapper
 │   ├── _document.js    # Document shell
 │   ├── index.js        # Homepage
 │   ├── contact.js      # Contact page
-│   ├── thank-you.js    # Thank you page
-│   ├── home-decor.js   # Home decor products
-│   └── chocolate-candy.js # Candy products
+│   ├── wholesale-unlocked-phones.js
+│   ├── luxury-chocolate-imports.js
+│   └── ...
 ├── public/             # Static assets
 │   ├── media/          # Images and media
-│   ├── send_email.php  # PHP mail handler
+│   ├── archive/        # Archived documents
 │   ├── robots.txt      # SEO robots file
 │   └── sitemap.xml     # SEO sitemap
-└── styles/             # CSS files
-    └── globals.css     # Global TailwindCSS styles
+├── lib/                # Utility functions
+│   └── schema.js       # SEO schema generators
+└── docs/               # Documentation
+    ├── archive/        # Historical docs
+    └── ...
 ```
 
 ## 🎨 Design System
@@ -55,38 +61,47 @@ The static export will be in the `/out` directory.
 
 ## 🔧 Configuration
 
+### Environment Variables (Vercel)
+
+Add these in Vercel Dashboard → Settings → Environment Variables:
+
+- `RESEND_API_KEY` - Your Resend API key for email sending
+
 ### Email Configuration
-Update email recipients in `public/send_email.php`:
-```php
-$to = "info@importationdot.ca, reubencredit@gmail.com";
-```
+
+Contact form emails are sent via Resend API to:
+- `info@importationdot.ca` (primary)
+- `reubencredit@gmail.com` (secondary/CC)
 
 ### Google Tag Manager
-Update GTM ID in `pages/_document.js` (replace `GTM-XXXXXXX`).
 
-## 📦 Deployment to Hostinger
+Update GTM ID in `pages/_document.js` (currently: `GTM-WX2LMHJB`).
 
-1. Build the static site:
-   ```bash
-   npm run build
-   ```
+## 📦 Deployment
 
-2. Upload contents of `/out` directory to `public_html/` on your Hostinger hosting.
+### Vercel (Recommended)
 
-3. Verify `send_email.php` is in the root of `public_html/`.
+1. Connect your GitHub repository to Vercel
+2. Add environment variable: `RESEND_API_KEY`
+3. Deploy automatically on push
 
-4. Test the contact form and verify email delivery.
+### Manual Build
+
+```bash
+npm run build
+```
+
+Static files will be in `/out` directory.
 
 ## ✅ Features
 
-- ✅ Fully static site (no Node.js runtime required)
+- ✅ Next.js with API routes
 - ✅ Edge-to-edge responsive layout
 - ✅ Image gallery with Swiper
-- ✅ PHP contact form handler
+- ✅ Resend email integration
 - ✅ SEO optimized with meta tags and schema markup
-- ✅ Google Tag Manager integration ready
+- ✅ Google Tag Manager integration
 - ✅ Clean, professional design
-- ✅ No animations or hover zooms
 - ✅ Accessible navigation
 
 ## 📧 Contact
