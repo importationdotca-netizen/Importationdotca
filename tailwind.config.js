@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,jsx,ts,tsx}',
@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         accent: {
-          500: '#e3b341',
-          600: '#d4a02b',
+          500: '#3b82f6',
+          600: '#2563eb',
         },
       },
     },
